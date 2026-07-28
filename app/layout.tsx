@@ -19,15 +19,25 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-
-  title:
-    "XAU News - Gold Price, XAU/USD and Financial Market Updates",
-
-  description:
-    "Latest gold news, XAU/USD analysis, forex updates, and global financial market information.",
-
-};
-
+title: 'XAUNEWS - Gold, Forex & Market News', 
+description: 'Latest gold, forex, interest rate and market analysis.',
+icons: { icon: '/favicon.ico', apple: '/favicon.ico', },
+openGraph: {
+  title: 'XAUNEWS - Gold, Forex & Market News',
+  description: 'Latest gold, forex, interest rate and market analysis.',
+  url: 'https://xau-news-5dm7.vercel.app',
+  siteName: 'XAUNEWS',
+  images: ['/images/gold.jpg'],
+  locale: 'en_US',
+  type: 'website',
+},
+twitter: {
+  card: 'summary_large_image',
+  title: 'XAUNEWS - Gold, Forex & Market News',
+  description: 'Latest gold, forex, interest rate and market analysis.',
+  images: ['/images/gold.jpg'],
+},
+}
 
 
 export default function RootLayout({

@@ -200,7 +200,7 @@ export default function Home() {
 
               <ArticleCard
 
-                key={article.id}
+                key={article.slug}
 
                 article={article}
 

@@ -136,7 +136,7 @@ export default async function SearchPage({
 
                   <ArticleCard
 
-                    key={article.id}
+                    key={article.slug}
 
                     article={article}
 

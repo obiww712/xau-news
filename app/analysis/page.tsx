@@ -66,7 +66,7 @@ analysisArticles.map((article) => (
 
 <ArticleCard
 
-key={article.id}
+key={article.slug}
 
 article={article}
 

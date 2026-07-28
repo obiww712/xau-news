@@ -52,7 +52,7 @@ export default function NewsPage() {
 
               <ArticleCard
 
-                key={article.id}
+                key={article.slug}
 
                 article={article}
 

@@ -1,145 +1,51 @@
-export const articles = [
+export type Article = {
+  slug: string
+  title: string
+  description: string
+  content: string[]
+  image: string
+  category: 'Gold' | 'Forex' | 'Interest Rate' | 'Analysis'
+  author: string
+  date: string
+}
+
+export const articles: Article[] = [
   {
-    id: 1,
-
-    title:
-      "Gold Price Outlook as Federal Reserve Policy Changes",
-
-    slug:
-      "gold-price-outlook-fed-policy",
-
-    category:
-      "Gold",
-
-    date:
-      "2026-07-29",
-
-    author:
-      "XAU News Team",
-
-    image:
-      "/images/gold.jpg",
-
+    slug: 'gold-price-rises-as-dollar-weakens',
+    title: 'Gold Price Rises as U.S. Dollar Weakens Ahead of Fed Meeting',
     description:
-      "Latest gold price update, XAU/USD movement and market outlook.",
+      'Gold prices advanced as the U.S. dollar softened and investors awaited the latest Federal Reserve policy decision.',
 
-    content:
-      `
-      Gold prices remain one of the most watched assets
-      in global financial markets.
+    image: '/images/gold.jpg',
+    category: 'Gold',
+    author: 'XAUNEWS Research',
+    date: '2026-07-29',
 
-      Investors continue monitoring inflation data,
-      Federal Reserve decisions, and economic conditions
-      that may influence XAU/USD movement.
-
-      Gold often reacts to changes in interest rates
-      and global uncertainty.
-      `,
+    content: [
+      'Gold prices moved higher during Wednesday trading as the U.S. dollar weakened against major currencies ahead of the upcoming Federal Reserve policy announcement.',
+      'Market participants expect the Fed to keep interest rates unchanged, but traders are closely watching for any signals regarding the timing of future rate cuts.',
+      'A weaker dollar typically supports gold because the metal becomes cheaper for holders of other currencies.',
+      'Analysts say that if Treasury yields continue to decline, gold could challenge the next resistance area near $3,450 per ounce.',
+      'Investors are also monitoring U.S. labor market data and inflation indicators for further confirmation of the monetary policy outlook.'
+    ]
   },
 
-
   {
-    id: 2,
-
-    title:
-      "Federal Reserve Interest Rate Forecast",
-
-    slug:
-      "federal-reserve-interest-rate-forecast",
-
-    category:
-      "Interest Rate",
-
-    date:
-      "2026-07-29",
-
-    author:
-      "XAU News Team",
-
-    image:
-      "/images/fed.jpg",
-
+    slug: 'eurusd-holds-above-1-12',
+    title: 'EUR/USD Holds Above 1.12 as Traders Await ECB Signals',
     description:
-      "Latest updates about Federal Reserve policy and interest rate expectations.",
+      'The euro remained supported above the 1.12 level as traders assessed the outlook for European Central Bank policy.',
 
-    content:
-      `
-      Interest rate decisions from the Federal Reserve
-      are important factors affecting currencies,
-      bonds, and gold prices.
+    image: '/images/chart.jpg',
+    category: 'Forex',
+    author: 'XAUNEWS Research',
+    date: '2026-07-29',
 
-      Markets closely follow economic indicators
-      before anticipating future policy changes.
-      `,
-  },
-
-
-  {
-    id: 3,
-
-    title:
-      "XAU/USD Technical Analysis Update",
-
-    slug:
-      "xauusd-technical-analysis-update",
-
-    category:
-      "Analysis",
-
-    date:
-      "2026-07-29",
-
-    author:
-      "XAU News Team",
-
-    image:
-      "/images/chart.jpg",
-
-    description:
-      "Technical analysis covering gold support and resistance levels.",
-
-    content:
-      `
-      Traders use technical analysis to identify
-      possible support and resistance areas.
-
-      XAU/USD movements are influenced by price action,
-      market sentiment, and economic news.
-      `,
-  },
-
-
-  {
-    id: 4,
-
-    title:
-      "Global Forex Market Update",
-
-    slug:
-      "global-forex-market-update",
-
-    category:
-      "Forex",
-
-    date:
-      "2026-07-29",
-
-    author:
-      "XAU News Team",
-
-    image:
-      "/images/chart.jpg",
-
-    description:
-      "Latest forex market movements and currency analysis.",
-
-    content:
-      `
-      Currency markets continue reacting to
-      economic data, central bank decisions,
-      and global market sentiment.
-      `
-
+    content: [
+      'EUR/USD traded in a relatively narrow range but remained above the 1.12 level during the European session.',
+      'Traders are looking for additional guidance from European Central Bank officials regarding inflation and future interest-rate decisions.',
+      'Technical analysts note that sustained trading above 1.1200 could open the door toward the 1.1280 resistance zone.',
+      'However, stronger-than-expected U.S. economic data may limit upside momentum for the pair.'
+    ]
   }
-
-];
+]
