@@ -2,12 +2,13 @@ import { articles } from "@/data/articles";
 import ArticleCard from "@/components/ArticleCard";
 
 
-export default function AnalysisPage(){
+export default function AnalysisPage() {
 
 
-const items = articles.filter(
+const analysisArticles = articles.filter(
 
-(article)=>
+(article) =>
+
 article.category === "Analysis"
 
 );
@@ -16,14 +17,39 @@ article.category === "Analysis"
 
 return (
 
-<main className="min-h-screen bg-gray-100 p-10">
+<main className="
+min-h-screen
+bg-gray-100
+p-10
+">
 
 
-<h1 className="text-5xl font-bold">
+<section className="
+mx-auto
+max-w-7xl
+">
+
+
+<h1 className="
+text-4xl
+font-bold
+">
 
 Market Analysis
 
 </h1>
+
+
+
+<p className="
+mt-4
+text-gray-600
+">
+
+Gold, XAU/USD and global market analysis.
+
+</p>
+
 
 
 
@@ -36,7 +62,7 @@ md:grid-cols-3
 
 
 {
-items.map(article=>(
+analysisArticles.map((article) => (
 
 <ArticleCard
 
@@ -53,8 +79,12 @@ article={article}
 </div>
 
 
+</section>
+
+
 </main>
 
 );
+
 
 }

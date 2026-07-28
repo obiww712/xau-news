@@ -107,38 +107,39 @@ export const articles = [
       market sentiment, and economic news.
       `,
   },
-,
 
-{
-id:4,
 
-title:
-"Global Forex Market Update",
+  {
+    id: 4,
 
-slug:
-"global-forex-market-update",
+    title:
+      "Global Forex Market Update",
 
-category:
-"Forex",
+    slug:
+      "global-forex-market-update",
 
-date:
-"2026-07-29",
+    category:
+      "Forex",
 
-author:
-"XAU News Team",
+    date:
+      "2026-07-29",
 
-image:
-"/images/chart.jpg",
+    author:
+      "XAU News Team",
 
-description:
-"Latest forex market movements and currency analysis.",
+    image:
+      "/images/chart.jpg",
 
-content:
-`
-Currency markets continue reacting to
-economic data, central bank decisions,
-and global market sentiment.
-`
+    description:
+      "Latest forex market movements and currency analysis.",
 
-}
+    content:
+      `
+      Currency markets continue reacting to
+      economic data, central bank decisions,
+      and global market sentiment.
+      `
+
+  }
+
 ];
