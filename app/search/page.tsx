@@ -53,6 +53,7 @@ export default async function SearchPage({
       ||
 
       article.content
+      .join(' ')
       .toLowerCase()
       .includes(keyword)
 

@@ -19,8 +19,11 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://xau-news-5dm7.vercel.app'),
+
 title: 'XAUNEWS - Gold, Forex & Market News', 
 description: 'Latest gold, forex, interest rate and market analysis.',
+
 icons: { icon: '/favicon.ico', apple: '/favicon.ico', },
 openGraph: {
   title: 'XAUNEWS - Gold, Forex & Market News',
